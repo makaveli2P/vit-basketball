@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>BasketBall || Events</title>
+    <link rel="icon" href="img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="css/flaticon.css">
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        * {box-sizing: border-box;}
+        
+        /* Full-width input fields */
+        input[type=text], input[type=password] {
+          width: 100%;
+          padding: 15px;
+          margin: 5px 0 22px 0;
+          display: inline-block;
+          border: none;
+          background: #f1f1f1;
+        }
+        
+        /* Add a background color when the inputs get focus */
+        input[type=text]:focus, input[type=password]:focus {
+          background-color: #ddd;
+          outline: none;
+        }
+        
+        /* Set a style for all buttons */
+        button {
+          background-color: #4CAF50;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+          opacity: 0.9;
+        }
+        
+        button:hover {
+          opacity:1;
+        }
+        
+        /* Extra styles for the cancel button */
+        .cancelbtn {
+          padding: 14px 20px;
+          background-color: #f44336;
+        }
+        
+        /* Float cancel and signup buttons and add an equal width */
+        .cancelbtn, .signupbtn {
+          float: left;
+          width: 50%;
+        }
+        
+        /* Add padding to container elements */
+        .container {
+          padding: 16px;
+        }
+        
+        /* The Modal (background) */
+        .modal {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: #474e5d;
+          padding-top: 50px;
+        }
+        
+        /* Modal Content/Box */
+        .modal-content {
+          background-color: #e2d9b0;
+          margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+          border: 1px solid #888;
+          width: 80%; /* Could be more or less, depending on screen size */
+        }
+        
+        /* Style the horizontal ruler */
+        hr {
+          border: 1px solid #f1f1f1;
+          margin-bottom: 25px;
+        }
+         
+        /* The Close Button (x) */
+        .close {
+          position: absolute;
+          right: 35px;
+          top: 15px;
+          font-size: 40px;
+          font-weight: bold;
+          color: #f1f1f1;
+        }
+        
+        .close:hover,
+        .close:focus {
+          color: #f44336;
+          cursor: pointer;
+        }
+        
+        /* Clear floats */
+        .clearfix::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        
+        /* Change styles for cancel button and signup button on extra small screens */
+        @media screen and (max-width: 300px) {
+          .cancelbtn, .signupbtn {
+             width: 100%;
+          }
+        }
+        </style>
+</head>
+
+<body>
+    <!--::header part start::-->
+    <header class="header_area">
+            <div class="main_menu">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <nav class="navbar navbar-expand-lg navbar-light">
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+        
+                                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                        <ul class="navbar-nav mr-auto">
+                                            <li class="nav-item active">
+                                                <a class="nav-link active" href="index.html">Home</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="about.html" class="nav-link">About us</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="team.html" class="nav-link">team</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="gallery.html" class="nav-link">gallery</a>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Statistics
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <a class="dropdown-item" href="players.php">Players</a>
+                                                    <a class="dropdown-item" href="team.html">Teams</a>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="event.html" class="nav-link">Events</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="contact.html" class="nav-link">Contact</a>
+                                            </li>
+                                        </ul>
+                                        <div class="header_social_icon d-none d-lg-block">
+                                            <ul>
+                                                <li><a href="#"><i class="ti-facebook"></i></a></li>
+                                                <li>
+                                                    <a href="#"> <i class="ti-twitter"></i></a>
+                                                </li>
+                                                <li><a href="#"><i class="ti-instagram"></i></a></li>
+                                                <li><a href="#"><i class="ti-skype"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </nav>
+                                <div class="header_social_icon d-block d-lg-none">
+                                    <ul>
+                                        <li><a href="#"><i class="ti-facebook"></i></a></li>
+                                        <li>
+                                            <a href="#"> <i class="ti-twitter"></i></a>
+                                        </li>
+                                        <li><a href="#"><i class="ti-instagram"></i></a></li>
+                                        <li><a href="#"><i class="ti-skype"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+  </header>
+  <!-- Header part end-->
+      <!--::breadcrumb part start::-->
+      <section class="breadcrumb breadcrumb_bg">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12">
+                     <div class="breadcrumb_iner_item">
+                        <h1>Events</h1>
+                     </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--::breadcrumb part start::-->
+       <!-- upcoming_event part start-->
+    <section class="upcoming_event section_padding">
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-xl-5">
+                  <div class="section_tittle text-center">
+                      <h4>Upcoming Event</h4>
+                      <h2>Basketball Tryouts</h2>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-6 col-xl-6">
+                  <div class="upcoming_event_1">
+                      <img src="img/upcoming_event_1.png" alt="#">
+                      <div class="upcoming_event_text">
+                            <div class="date">
+                                <h3>11<span>sep</span> </h3>
+                            </div>
+                            <div class="time">
+                                <ul class="list-unstyle">
+                                    <li> <span class="ti-time"></span> 11:00 AM - 12:30 PM</li>
+                                    <li> <span class="ti-location-pin"></span>TT Basketball Court</li>
+                                </ul>
+                            </div>
+                            <p>BASKETBALL TOURNAMENT!<br>VIT vs Anna University</p>
+                            <a href="#" class="btn_2">View Details</a>
+                        </div>
+                  </div>
+              </div>
+              <div class="col-md-6  col-xl-6">
+                  <div class="upcoming_event_1">
+                      <img src="img/upcoming_event_2.png" alt="#">
+                      <div class="upcoming_event_text">
+                          <div class="date">
+                              <h3>3<span>Oct</span> </h3>
+                          </div>
+                          <div class="time">
+                              <ul class="list-unstyle">
+                                  <li> <span class="ti-time"></span> 04:00 PM - 06:30 PM</li>
+                                  <li> <span class="ti-location-pin"></span>TT Basketball Court</li>
+                              </ul>
+                          </div>
+                          <p>Basketball tryouts for freshers and 2nd years at the TT basketball court.</p>
+
+
+
+                          <button class="btn_2" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Register</button>
+
+                          <div id="id01" class="modal">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                            <form class="modal-content" action="registration.php" method="POST">
+                              <div class="container">
+                                <h1>Register</h1>
+                                <p>Please fill in this form to register for the event</p>
+                                <hr>
+                                <label for="username"><b>Name</b></label>
+                                <input type="text" placeholder="Enter Name" name="username" required>
+
+                                <label for="email"><b>Email</b></label>
+                                <input type="text" placeholder="Enter Email" name="email" required>
+
+                                <label for="hblock"><b>Hostel Block</b></label>
+                                <input type="text" placeholder="Enter Hostel Block" name="hblock" required>
+
+                                <label for="pno"><b>Phone Number</b></label>
+                                <input type="text" placeholder="Enter Phone Number" name="pno" required>
+
+                                <label for="pno"><b>Gender</b></label>
+                                <input type="text" placeholder="Gender" name="gender" required>
+                          
+                                <label for="year"><b>Year</b></label>
+                                <input type="text" placeholder="Enter The Year You're Studying In" name="year" required>
+
+                                <label for="year"><b>Experience</b></label>
+                                <input type="text" placeholder="Yes or No" name="exp" required>
+                                
+                                <div class="clearfix">
+                                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                  <button type="submit" class="signupbtn" name="s">Register</button>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                          
+                          <script>
+                          // Get the modal
+                          var modal = document.getElementById('id01');
+                          
+                          // When the user clicks anywhere outside of the modal, close it
+                          window.onclick = function(event) {
+                            if (event.target == modal) {
+                              modal.style.display = "none";
+                            }
+                          }
+                          </script>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- upcoming_event part start-->
+  
+  <!-- footer part start-->
+  <section class="footer-area section_padding">
+   <div class="container">
+       <div class="row">
+           <div class="col-xl-2 col-sm-4 mb-4 mb-xl-0 single-footer-widget">
+               <h4>Top Players</h4>
+               <ul>
+                   <li><a href="#">Points</a></li>
+                   <li><a href="#">Assists</a></li>
+                   <li><a href="#">Rebounds</a></li>
+                   <li><a href="#">Steals</a></li>
+               </ul>
+           </div>
+           <div class="col-xl-2 col-sm-4 mb-4 mb-xl-0 single-footer-widget">
+               <h4>Features</h4>
+               <ul>
+                   <li><a href="#">Strategize</a></li>
+                   <li><a href="#">Compare</a></li>
+                   <li><a href="#">Stats</a></li>
+                   <li><a href="#">Connect</a></li>
+               </ul>
+           </div>
+           <div class="col-xl-2 col-sm-4 mb-4 mb-xl-0 single-footer-widget">
+
+           </div>
+           <div class="col-xl-4 col-sm-8 col-md-8 mb-4 mb-xl-0 single-footer-widget">
+               <h4>Newsletter</h4>
+               <p>Keep yourself updated</p>
+               <div class="form-wrap" id="mc_embed_signup">
+                   <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="form-inline">
+                       <input class="form-control" name="EMAIL" placeholder="Your Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address '" required="" type="email">
+                       <button class="click-btn btn btn-default text-uppercase">subscribe</button>
+                       <div style="position: absolute; left: -5000px;">
+                           <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+                       </div>
+
+                       <div class="info"></div>
+                   </form>
+               </div>
+           </div>
+       </div>
+   </div>
+</section>
+<footer class="copyright_part">
+   <div class="container">
+       <div class="row align-items-center">
+           <p class="footer-text m-0 col-lg-8 col-md-12">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> IWP Project | Dhruv Agarwal</p>
+           <div class="col-lg-4 col-md-12 text-center text-lg-right footer-social">
+               <a href="#"><i class="ti-facebook"></i></a>
+               <a href="#"> <i class="ti-twitter"></i> </a>
+               <a href="#"><i class="ti-instagram"></i></a>
+               <a href="#"><i class="ti-skype"></i></a>
+           </div>
+       </div>
+   </div>
+</footer>
+<!-- footer part end-->
+
+
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+  
+  <!-- jquery plugins here-->
+  <!-- jquery -->
+  <script src="js/jquery-1.12.1.min.js"></script>
+  <!-- popper js -->
+  <script src="js/popper.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- aos js -->
+  <script src="js/aos.js"></script>
+  <!-- easing js -->
+  <script src="js/jquery.magnific-popup.js"></script>
+  <!-- swiper js -->
+  <script src="js/swiper.min.js"></script>
+  <!-- swiper js -->
+  <script src="js/masonry.pkgd.js"></script>
+  <!-- particles js -->
+  <script src="js/owl.carousel.min.js"></script>
+  <!-- carousel js -->
+  <script src="js/swiper.min.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+
+
+
+  </body>
+  
+  </html>
